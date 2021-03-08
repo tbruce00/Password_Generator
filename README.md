@@ -25,6 +25,7 @@ Based of their confirmations of the above criteria, the page will utilize Javasc
 
 ## Deployed Application
 
+https://tbruce00.github.io/Password_Generator/
 
 ## Application Screenshot
 
