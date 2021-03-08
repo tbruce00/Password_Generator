@@ -1,9 +1,9 @@
 //Variables
 
-var capLetter = ["A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"];
-var lowerLetter = ["a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,"];
-var character = ["!, @, #, $, %, ^, &, *, (, ), -, =, +, [, ], {, }, /,"];
-var number =  [1,2, 3, 4, 5, 6, 7, 8, 9, 10];
+capLetter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+lowerLetter = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
+character = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "=", "+", "[", "]", "{", "}", "/",];
+number =  [1,2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 var input;
 var output;
@@ -25,6 +25,7 @@ function writePassword() {
 
   passwordText.value = password;
 }
+
 
 function generatePassword() {
 
@@ -99,8 +100,9 @@ for (var i = 0; i < input; i++) {
  userChoice = output[Math.floor(Math.random() * output.length)];
   passwordLength.push(userChoice);
 }
-
-
+writePassword;
+return userChoice;
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
