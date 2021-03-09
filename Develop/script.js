@@ -44,7 +44,7 @@ input = parseInt(input);
     confirmLowercase = confirm("Would you like your password to contain lowercase letters?") == true;
     confirmUppercase = confirm("Would you like your password to contain uppercase letters?") == true;
     confirmCharacter = confirm ("Would you like your passwword to contain special characters?") == true;
-    
+
   }; if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercase) {
     output = alert (" You must choose at least 1 criteria for your password")
   }
@@ -95,6 +95,7 @@ input = parseInt(input);
     output = character;
   }
 
+var password = "";
 
 for (var i = 0; i < input; i++) {
  var userChoice = output[Math.floor(Math.random() * output.length)];
